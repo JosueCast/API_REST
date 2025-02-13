@@ -76,7 +76,7 @@ _Desarrolladrores del proyecto_
 
 <br>
 <p align="left">
-  <a href="[https://skillicons.dev](https://drive.google.com/file/d/1vNjUwh6kjp2RQOpxkDOyf6uIm8Bf1Kb9/view?usp=sharing)">
+  <a href="(https://drive.google.com/file/d/1vNjUwh6kjp2RQOpxkDOyf6uIm8Bf1Kb9/view?usp=sharing)">
     <img src="https://skillicons.dev/icons?i=gcp&perline=12" />
   </a>
 </p>
