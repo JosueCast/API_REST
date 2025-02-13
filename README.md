@@ -71,17 +71,16 @@ _Desarrolladrores del proyecto_
 
 * **Josue Aaron Castillo ** - *Creacion de la Api* - ⌨️ con ❤️ por [JosueCast](https://github.com/JosueCast) 😊
 
-
-## Imagen de ejemplo
+<br>
+## Ver video en drive
 
 <br>
 <p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=drive,ps&perline=12" />
+  <a href="[https://skillicons.dev](https://drive.google.com/file/d/1vNjUwh6kjp2RQOpxkDOyf6uIm8Bf1Kb9/view?usp=sharing)">
+    <img src="https://skillicons.dev/icons?i=gcp&perline=12" />
   </a>
 </p>
 
-<br>
 
-([![Ver Video EN Drive ](https://drive.google.com/file/d/1vNjUwh6kjp2RQOpxkDOyf6uIm8Bf1Kb9/view?usp=sharing)]
+
 
