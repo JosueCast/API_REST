@@ -65,6 +65,12 @@ Una vez ejecutada la API, puedes acceder a la documentación generada automátic
 http://localhost:5000/swagger
 ```
 
-## Desarrollado
-[Josue Aaron Castillo🎃]
+## Autor ✒️
+
+_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+
+* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
+* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
 
