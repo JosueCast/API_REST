@@ -65,6 +65,6 @@ Una vez ejecutada la API, puedes acceder a la documentación generada automátic
 http://localhost:5000/swagger
 ```
 
-## Autor
-[Tu Nombre]
+## Desarrollado
+[Josue Aaron Castillo🎃]
 
