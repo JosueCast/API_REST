@@ -62,14 +62,14 @@ DELETE /api/productos/{id}
 ## Documentación con Swagger
 Una vez ejecutada la API, puedes acceder a la documentación generada automáticamente en:
 ```
-http://localhost:5000/swagger
+http://localhost:XXXX/swagger
 ```
 
 ## Autor ✒️
 
 _Desarrolladrores del proyecto_
 
-* **Josue Aaron Castillo ** - *Creacion de la Api* - [JosueCast](())
-⌨️ con ❤️ por [Villanuevand](https://github.com/JosueCast) 😊
+* **Josue Aaron Castillo ** - *Creacion de la Api* - ⌨️ con ❤️ por [JosueCast](https://github.com/JosueCast) 😊
+
 
 
