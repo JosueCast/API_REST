@@ -74,5 +74,14 @@ _Desarrolladrores del proyecto_
 
 ## Imagen de ejemplo
 
-([![Ver Video](https://github.com/usuario/repositorio/blob/main/imagen.png)](https://drive.google.com/file/d/ID_DEL_VIDEO/view)](https://drive.google.com/file/d/1vNjUwh6kjp2RQOpxkDOyf6uIm8Bf1Kb9/view?usp=sharing)
+<br>
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=drive,ps&perline=12" />
+  </a>
+</p>
+
+<br>
+
+([![Ver Video EN Drive ](https://drive.google.com/file/d/1vNjUwh6kjp2RQOpxkDOyf6uIm8Bf1Kb9/view?usp=sharing)]
 
