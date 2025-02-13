@@ -67,10 +67,9 @@ http://localhost:5000/swagger
 
 ## Autor ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+_Desarrolladrores del proyecto_
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **Josue Aaron Castillo ** - *Creacion de la Api* - [JosueCast]([https://github.com/villanuevand](https://github.com/JosueCast))
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+
 
