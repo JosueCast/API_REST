@@ -74,11 +74,7 @@ _Desarrolladrores del proyecto_
 <br>
 ## Ver video en drive
 
-<p align="left">
-  <a href="https://drive.google.com/file/d/1vNjUwh6kjp2RQOpxkDOyf6uIm8Bf1Kb9/view?usp=sharing">
-    <img src="https://skillicons.dev/icons?i=drive&perline=12" />
-  </a>
-</p>
+[![Google Drive](https://skillicons.dev/icons?i=drive&perline=12)](https://drive.google.com/file/d/1vNjUwh6kjp2RQOpxkDOyf6uIm8Bf1Kb9/view?usp=sharing)
 
 
 
