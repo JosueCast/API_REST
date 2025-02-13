@@ -69,7 +69,7 @@ http://localhost:5000/swagger
 
 _Desarrolladrores del proyecto_
 
-* **Josue Aaron Castillo ** - *Creacion de la Api* - [JosueCast]([https://github.com/villanuevand](https://github.com/JosueCast))
+* **Josue Aaron Castillo ** - *Creacion de la Api* - [JosueCast]([(https://github.com/JosueCast)])
 
 
 
