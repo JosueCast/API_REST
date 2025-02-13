@@ -74,4 +74,5 @@ _Desarrolladrores del proyecto_
 
 ## Imagen de ejemplo
 
-![Descripción de la imagen](https://i.imgur.com/RFQWL0Z.png)
+[![Ver Video](https://github.com/usuario/repositorio/blob/main/imagen.png)](https://drive.google.com/file/d/ID_DEL_VIDEO/view)
+
