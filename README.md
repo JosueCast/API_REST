@@ -73,7 +73,8 @@ _Desarrolladrores del proyecto_
 
 
 ## Video de prueba  con Postman
-![Descripción de la imagen](https://i.ytimg.com/vi/5eozUmmJ6DE/maxresdefault.jpg)
+[![Descripción de la imagen](https://i.ytimg.com/vi/5eozUmmJ6DE/maxresdefault.jpg)](https://drive.google.com/file/d/1vNjUwh6kjp2RQOpxkDOyf6uIm8Bf1Kb9/view?usp=sharing)
+
 [![Google Drive](https://skillicons.dev/icons?i=gcp&perline=12)](https://drive.google.com/file/d/1vNjUwh6kjp2RQOpxkDOyf6uIm8Bf1Kb9/view?usp=sharing)
 
 
