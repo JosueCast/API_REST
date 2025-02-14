@@ -72,7 +72,7 @@ _Desarrolladrores del proyecto_
 * **Josue Aaron Castillo ** - *Creacion de la Api* - ⌨️ con ❤️ por [JosueCast](https://github.com/JosueCast) 😊
 
 
-## Documentación con Swagger
+## Video de prueba  con Postman
 [![Google Drive](https://skillicons.dev/icons?i=gcp&perline=12)](https://drive.google.com/file/d/1vNjUwh6kjp2RQOpxkDOyf6uIm8Bf1Kb9/view?usp=sharing)
 
 
