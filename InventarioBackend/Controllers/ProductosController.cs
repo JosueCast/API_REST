@@ -1,86 +1,117 @@
 ﻿using InventarioBackend.Data;
 using InventarioBackend.Models;
+using InventarioBackend.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace InventarioBackend.Controllers
 {
-    
-        [Route("api/productos")]
-        [ApiController]
-        public class ProductosController : ControllerBase
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ProductoController : ControllerBase
+    {
+        private readonly productoDAO _dao;
+
+        public ProductoController(ApplicationsDbContext context)
         {
-            private readonly ApplicationsDbContext _context;
+            _dao = new productoDAO(context);
+        }
 
-            public ProductosController(ApplicationsDbContext context)
+        [HttpGet("LeerProductos")]
+        public async Task<ActionResult<List<Producto>>> ObtenerListado()
+        {
+            var productos = await _dao.Get();
+
+            // Verificar si la lista está vacía o es nula
+            if (productos == null || !productos.Any())
             {
-                _context = context;
+                return NotFound("No se encontraron productos.");
             }
-            
-            // GET: api/productos obtenemos los productos en una lista para mostrar
-            [HttpGet]
-            public async Task<ActionResult<IEnumerable<Producto>>> GetProductos()
+            return Ok(productos);
+        }
+
+
+        [HttpGet("ObtenerPorId/{id}")]
+        public async Task<ActionResult<Producto>> ObtenerPorId(int id)
+        {
+            var producto = await _dao.GetById(id);
+
+            if (producto == null)
             {
-                return await _context.Productos.ToListAsync();
+                return NotFound($"No se encontró el producto con ID {id}");
             }
 
-            // GET: api/productos/{id} obtenemos un producto por id 
-            [HttpGet("{id}")]
-            public async Task<ActionResult<Producto>> GetProducto(int id)
+            return Ok(producto);
+        }
+
+        [HttpDelete("EliminarProducto/{id}")]
+        public async Task<ActionResult> EliminarProducto(int id)
+        {
+            try
             {
-                var producto = await _context.Productos.FindAsync(id);
+                var producto = await _dao.GetById(id);
                 if (producto == null)
-                    return NotFound();
-
-                return producto;
-            }
-
-            // POST: api/productos guardamos un producto a nuestra base de datos
-            [HttpPost]
-            public async Task<ActionResult<Producto>> PostProducto(Producto producto)
-            {
-                _context.Productos.Add(producto);
-                await _context.SaveChangesAsync();
-
-                return CreatedAtAction(nameof(GetProducto), new { id = producto.Id }, producto);
-            }
-
-            // PUT: api/productos/{id} actualizamos un producto a nuestra base de datos en sql server
-            [HttpPut("{id}")]
-            public async Task<IActionResult> PutProducto(int id, Producto producto)
-            {
-                if (id != producto.Id)
-                    return BadRequest();
-
-                _context.Entry(producto).State = EntityState.Modified;
-
-                try
                 {
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!_context.Productos.Any(e => e.Id == id))
-                        return NotFound();
-
-                    throw;
+                    return NotFound("Producto no encontrado.");
                 }
 
-                return NoContent();
+                _dao.Delete(producto);
+                await _dao.Save();
+
+                return Ok(new { mensaje = "Producto eliminado con éxito" });
             }
-
-            // DELETE: api/productos/{id} eliminamos un producto en de nuestra tabla Productos de nuestra base de datos
-            [HttpDelete("{id}")]
-            public async Task<IActionResult> DeleteProducto(int id)
+            catch (Exception ex)
             {
-                var producto = await _context.Productos.FindAsync(id);
-                if (producto == null)
-                    return NotFound();
-
-                _context.Productos.Remove(producto);
-                await _context.SaveChangesAsync();
-
-                return NoContent();
+                return StatusCode(500, new { mensaje = "Error interno del servidor", error = ex.Message });
             }
         }
+
+        [HttpPost("InsertarProducto")]
+        public async Task<ActionResult> InsertarProducto([FromBody] Producto productoDTO)
+        {
+            if (productoDTO == null || string.IsNullOrWhiteSpace(productoDTO.Nombre) || productoDTO.Stock < 0 || productoDTO.Precio <= 0)
+            {
+                return BadRequest("Datos de producto inválidos.");
+            }
+
+            var nuevoProducto = new Producto
+            {
+                Nombre = productoDTO.Nombre,
+                Stock = productoDTO.Stock,
+                Precio = productoDTO.Precio
+            };
+
+            await _dao.Add(nuevoProducto);
+            await _dao.Save();
+
+            return CreatedAtAction(nameof(ObtenerPorId), new { id = nuevoProducto.Id }, nuevoProducto);
+        }
+
+        [HttpPut("EditarProducto/{id}")]
+        public async Task<ActionResult> ActualizarProducto(int id, [FromBody] Producto producto)
+        {
+            if (producto == null || string.IsNullOrWhiteSpace(producto.Nombre) || producto.Stock < 0 || producto.Precio <= 0)
+            {
+                return BadRequest("Datos de producto inválidos.");
+            }
+
+            // Obtener el producto desde la base de datos
+            var productoExistente = await _dao.GetById(id);
+            if (productoExistente == null)
+            {
+                return NotFound("Producto no encontrado.");
+            }
+
+            // Actualizar los datos del producto existente
+            productoExistente.Nombre = producto.Nombre;
+            productoExistente.Stock = producto.Stock;
+            productoExistente.Precio = producto.Precio;
+
+            // Realizar la actualización
+            _dao.Update(productoExistente);
+            await _dao.Save();
+
+            return Ok(productoExistente);  // Retornar el producto actualizado
+        }
     }
+}
