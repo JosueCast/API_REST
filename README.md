@@ -73,7 +73,7 @@ _Desarrolladrores del proyecto_
 ## **Video de prueba  con jquery,Html,css y JavaScript**
 [![Descripción de la imagen](https://i.ytimg.com/vi/vUUnyEX3GWo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDgL-1hWaMs8MgJReqzx6iFBJecpA)](https://drive.google.com/file/d/1hHdQsdUlbqdAfFdZOHY0sXabgWtzAxVm/view?usp=sharingg)
 
-## Codigo del frontend (ojo revisar descripcion)[![Google Drive](https://skillicons.dev/icons?i=git&perline=12)](https://github.com/JosueCast/Frontend_Pruebas)
+## Codigo del frontend (ojo revisar descripcion)    [![Google Drive](https://skillicons.dev/icons?i=git&perline=12)](https://github.com/JosueCast/Frontend_Pruebas)
 
 
 ## **Video de prueba  con Postman**
