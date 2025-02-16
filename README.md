@@ -70,7 +70,8 @@ http://localhost:XXXX/swagger
 _Desarrolladrores del proyecto_
 
 * **Josue Aaron Castillo ** - *Creacion de la Api* - ⌨️ con ❤️ por [JosueCast](https://github.com/JosueCast) 😊
-
+## Video de prueba  con jquery,Html,css y JavaScript
+[![Descripción de la imagen](https://i.ytimg.com/vi/5eozUmmJ6DE/maxresdefault.jpg)](https://drive.google.com/file/d/1vNjUwh6kjp2RQOpxkDOyf6uIm8Bf1Kb9/view?usp=sharing)
 
 ## Video de prueba  con Postman
 [![Descripción de la imagen](https://i.ytimg.com/vi/5eozUmmJ6DE/maxresdefault.jpg)](https://drive.google.com/file/d/1vNjUwh6kjp2RQOpxkDOyf6uIm8Bf1Kb9/view?usp=sharing)
