@@ -18,6 +18,19 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddScoped<IProductoDAO, productoDAO>();
+//esto permite a mi forntend porder acceder a mi backend pruebas
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+        policy =>
+        {
+            policy.WithOrigins("http://127.0.0.1:5500") // Agrega el dominio de tu frontend
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
 
 
 
@@ -34,6 +47,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+//prueba 
+app.UseCors(MyAllowSpecificOrigins);
+
 
 app.UseHttpsRedirection();
 
@@ -42,3 +58,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
+
