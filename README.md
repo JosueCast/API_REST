@@ -15,7 +15,7 @@ Permite realizar operaciones **CRUD** sobre una base de datos **SQL Server** par
 ## 📂 Estructura del Proyecto  
 
 ```
-📦 WebApiProductos  
+📦 InventarioBackend  
  ┣ 📂 Controllers  
  ┃ ┗ 📜 ProductosController.cs  
  ┣ 📂 Models  
