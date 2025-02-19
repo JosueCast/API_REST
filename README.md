@@ -36,7 +36,7 @@ Permite realizar operaciones **CRUD** sobre una base de datos **SQL Server** par
 
 ### 1️⃣ **Clonar el repositorio**  
 ```sh
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/JosueCast/API_REST.git
 cd nombre-del-repositorio
 ```
 
